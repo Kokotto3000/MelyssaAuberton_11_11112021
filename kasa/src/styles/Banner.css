@@ -1,0 +1,19 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #c4c4c4;
+    background: url(../assets/banner-background.jpg);
+    background-size: cover;
+    border-radius: 2.5rem;
+    height: 22rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.banner_title{
+    color: white;
+    font-size: 4.8rem;
+    font-weight: 500;
+}
