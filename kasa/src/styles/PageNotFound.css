@@ -1,0 +1,35 @@
+.not-found{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.not-found div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found_title{
+    font-size: 28.8rem;
+    font-weight: 700;
+    padding: 3rem;
+}
+
+.not-found_subtitle{
+    font-size: 3.6rem;
+    font-weight: 500;
+    padding: 3rem;
+}
+
+.not-found_link{
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    font-size: 500;
+    margin: 18rem 0;
+}

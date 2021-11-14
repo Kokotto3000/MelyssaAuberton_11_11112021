@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from '../assets/logo.png'; 
 import '../styles/Header.css';
+import { Link } from 'react-router-dom';
 
 class Header extends Component{
 
@@ -11,17 +12,17 @@ class Header extends Component{
 
     render(){
         return (
-            <div className="header">
-                <a href="index.html">
+            <header className="header">
+                <Link to="/">
                     <img className="header_logo" src={ logo } alt="logo Kasa" />
-                </a>
+                </Link>
                 
                 {/* <h1>{this.state.title}</h1> */}
-                <div className="header_nav">
-                    <a className="header_nav-link" href="#accueil">Accueil</a>
-                    <a className="header_nav-link" href="#accueil">A Propos</a>
-                </div>
-            </div>);
+                <nav className="header_nav">
+                    <Link className="header_nav-link" to="/">Accueil</Link>
+                    <Link className="header_nav-link" to="/about">A Propos</Link>
+                </nav>
+            </header>);
     }
 }
 
