@@ -1,0 +1,22 @@
+.thumb{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 1rem;
+    position: relative;
+    width: 34rem;
+    height: 34rem;
+    /* min-width: 34rem; */
+    /* height: 34rem;
+    width: 28%; */
+    margin: 2.5rem;
+}
+
+.thumb_title{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+    color: white;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.8rem;
+}

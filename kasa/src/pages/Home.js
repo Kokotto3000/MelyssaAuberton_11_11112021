@@ -1,6 +1,7 @@
 import '../styles/Home.css';
 import { Component } from 'react';
 import Banner from '../components/Banner';
+import Gallery from '../components/Gallery';
 
 
 class Accueil extends Component{
@@ -10,7 +11,7 @@ class Accueil extends Component{
             <div>
                 {/* <Header /> */}
                 <Banner title="Chez vous, partout et ailleurs"/>
-                <h1>Accueil</h1>
+                <Gallery />
             </div>
         );
   }
