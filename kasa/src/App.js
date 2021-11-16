@@ -20,7 +20,7 @@ class App extends Component{
 
                         <Route exact path="/" element={<Home />} />
                         <Route exact path="/about" element={<About />} />
-                        <Route path="/accomodation/:id" element={<Accomodation />} />
+                        <Route path="/accomodation/:id" element={<Accomodation authed={true}/>}/>
                         <Route path="*" element={<PageNotFound />} />            
                         
                         {/* si l'id n'existe pas il nous faudra aussi une route not found... */}
