@@ -5,7 +5,7 @@ class Rate extends Component{
 
     render(){
         return(
-            <h3 className="accomodation-header_rate">Rate</h3>
+            <h3 className="accomodation-header_rate">{this.props.rating}</h3>
         );
     }
 }

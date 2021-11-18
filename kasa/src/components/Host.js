@@ -5,7 +5,11 @@ class Host extends Component{
 
     render(){
         return(
-            <h3 className="accomodation-header_host">Host</h3>
+            <div className="accomodation-header_host">
+                <h3>{this.props.name}</h3>
+                <img src={this.props.picture} alt={this.props.name} />
+            </div>
+            
         );
     }
 }

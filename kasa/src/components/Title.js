@@ -6,7 +6,11 @@ class Title extends Component{
 
     render(){
         return(
-            <h3 className="accomodation-header_title">Titre</h3>
+            <div className="accomodation-header_title">
+                <h3>{this.props.title}</h3>
+                <h4>{this.props.location}</h4>
+            </div>
+            
         );
     }
 }

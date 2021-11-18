@@ -5,7 +5,18 @@ class Tags extends Component{
 
     render(){
         return(
-            <h3 className="accomodation-header_tags">Tags</h3>
+            <div className="accomodation-header_tags">
+                <ul className="accomodation-header_tags-list">
+                {this.props.tags.map((tag, index) =>
+                    (
+                        <li key={index}>
+                            {tag}
+                        </li>
+                    )
+                )}
+            </ul>
+
+            </div>
         );
     }
 }
