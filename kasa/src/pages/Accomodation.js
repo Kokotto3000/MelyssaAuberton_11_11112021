@@ -6,7 +6,7 @@ class Accomodation extends Component{
     render(){
         console.log(this.props);
         return(
-            <h1>Accomodation</h1>
+            <h1>Accomodation {this.props.match.params.id} </h1>
         );
     }
 }
