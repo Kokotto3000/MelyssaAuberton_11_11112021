@@ -1,0 +1,5 @@
+.accomodation-header, .accomodation-menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
