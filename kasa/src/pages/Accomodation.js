@@ -7,6 +7,7 @@ import Rate from "../components/Rate";
 import "../styles/Accomodation.css";
 import Dropdown from "../components/Dropdown";
 import logements from '../datas/logements';
+import PageNotFound from "./PageNotFound";
 
 class Accomodation extends Component{
 
@@ -28,15 +29,17 @@ class Accomodation extends Component{
 
         const logement= this.filterById(this.state.id);
 
+        if(!logement) return <PageNotFound />
+
         return(
-            <div>
+            <main>
                 {/* <h1>Accomodation {this.state.id} </h1> */}
                 <Carrousel pictures={logement.pictures} alt={logement.title} />
                 <section className="accomodation-header"> 
                     <Title title={logement.title} location={logement.location} />
                     <Host name={logement.host.name} picture={logement.host.picture} />
                     <Tags tags={logement.tags} />
-                    <Rate rating={logement.rating} />
+                    <Rate rating={parseInt(logement.rating)} />
                 </section>
                 <div className="accomodation-menu">
                     <div className="accomodation-menu_dropdown">
@@ -46,7 +49,7 @@ class Accomodation extends Component{
                         <Dropdown title="Equipements" description={logement.equipments} />
                     </div>                    
                 </div>
-            </div>
+            </main>
         );
     }
 }

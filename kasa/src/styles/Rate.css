@@ -1,3 +1,12 @@
 .accomodation-header_rate{
     flex-basis: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.accomodation-header_rate svg{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
 }

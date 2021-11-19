@@ -1,3 +1,20 @@
 .accomodation-header_host{
-    flex-basis: 45%;
+    display: flex;
+    justify-content: flex-end;    
+    align-items: center;
+    flex-basis: 39%;
+}
+
+.accomodation-header_host-name{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    padding: 1rem;
+}
+
+.accomodation-header_host-image{
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+    background-color: #c4c4c4;
 }

@@ -7,8 +7,8 @@ class Title extends Component{
     render(){
         return(
             <div className="accomodation-header_title">
-                <h3>{this.props.title}</h3>
-                <h4>{this.props.location}</h4>
+                <h1 className="accomodation-header_title-main">{this.props.title}</h1>
+                <h2 className="accomodation-header_title-subtitle">{this.props.location}</h2>
             </div>
             
         );

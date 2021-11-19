@@ -1,3 +1,16 @@
 .accomodation-header_title{
-    flex-basis: 45%;
+    flex-basis: 58%;
+    color: var(--color-primary);
+    margin: 2rem 0;
+}
+
+.accomodation-header_title-main{
+    font-size: 3.6rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.accomodation-header_title-subtitle{
+    font-size: 1.8rem;
+    font-weight: 500;
 }

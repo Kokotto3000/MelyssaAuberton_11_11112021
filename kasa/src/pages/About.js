@@ -9,7 +9,7 @@ class Propos extends Component{
 
   render(){
         return (
-            <div>
+            <main>
                 <Banner image={background} />
                 <div className="about-menu">
                     {about.map((element, index)=> (
@@ -17,7 +17,7 @@ class Propos extends Component{
                         )
                     )}
                 </div>
-            </div>
+            </main>
         );
   }
   

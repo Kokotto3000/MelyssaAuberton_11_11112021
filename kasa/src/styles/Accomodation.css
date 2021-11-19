@@ -1,7 +1,9 @@
 .accomodation-header, .accomodation-menu{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2rem auto;
 }
 
 .accomodation-menu_dropdown{

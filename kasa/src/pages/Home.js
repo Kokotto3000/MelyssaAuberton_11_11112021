@@ -9,11 +9,11 @@ class Accueil extends Component{
 
   render(){
         return (
-            <div>
+            <main>
                 {/* <Header /> */}
                 <Banner title="Chez vous, partout et ailleurs" image={background} />
                 <Gallery />
-            </div>
+            </main>
         );
   }
   
