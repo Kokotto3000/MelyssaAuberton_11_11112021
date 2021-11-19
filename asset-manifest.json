@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/MelyssaAuberton_11_11112021/static/css/main.8dfbac0a.chunk.css",
-    "main.js": "/MelyssaAuberton_11_11112021/static/js/main.5068f4bb.chunk.js",
-    "main.js.map": "/MelyssaAuberton_11_11112021/static/js/main.5068f4bb.chunk.js.map",
+    "main.css": "/MelyssaAuberton_11_11112021/static/css/main.2ea4570b.chunk.css",
+    "main.js": "/MelyssaAuberton_11_11112021/static/js/main.0fdec4f7.chunk.js",
+    "main.js.map": "/MelyssaAuberton_11_11112021/static/js/main.0fdec4f7.chunk.js.map",
     "runtime-main.js": "/MelyssaAuberton_11_11112021/static/js/runtime-main.272cf7e1.js",
     "runtime-main.js.map": "/MelyssaAuberton_11_11112021/static/js/runtime-main.272cf7e1.js.map",
     "static/js/2.a034bddb.chunk.js": "/MelyssaAuberton_11_11112021/static/js/2.a034bddb.chunk.js",
     "static/js/2.a034bddb.chunk.js.map": "/MelyssaAuberton_11_11112021/static/js/2.a034bddb.chunk.js.map",
     "index.html": "/MelyssaAuberton_11_11112021/index.html",
-    "static/css/main.8dfbac0a.chunk.css.map": "/MelyssaAuberton_11_11112021/static/css/main.8dfbac0a.chunk.css.map",
+    "static/css/main.2ea4570b.chunk.css.map": "/MelyssaAuberton_11_11112021/static/css/main.2ea4570b.chunk.css.map",
     "static/js/2.a034bddb.chunk.js.LICENSE.txt": "/MelyssaAuberton_11_11112021/static/js/2.a034bddb.chunk.js.LICENSE.txt",
     "static/media/banner-background-about.5e30ecd5.jpg": "/MelyssaAuberton_11_11112021/static/media/banner-background-about.5e30ecd5.jpg",
     "static/media/banner-background-home.8dbc3e4f.jpg": "/MelyssaAuberton_11_11112021/static/media/banner-background-home.8dbc3e4f.jpg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.272cf7e1.js",
     "static/js/2.a034bddb.chunk.js",
-    "static/css/main.8dfbac0a.chunk.css",
-    "static/js/main.5068f4bb.chunk.js"
+    "static/css/main.2ea4570b.chunk.css",
+    "static/js/main.0fdec4f7.chunk.js"
   ]
 }
