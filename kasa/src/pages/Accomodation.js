@@ -31,7 +31,7 @@ class Accomodation extends Component{
         return(
             <div>
                 {/* <h1>Accomodation {this.state.id} </h1> */}
-                <Carrousel />
+                <Carrousel pictures={logement.pictures} alt={logement.title} />
                 <section className="accomodation-header"> 
                     <Title title={logement.title} location={logement.location} />
                     <Host name={logement.host.name} picture={logement.host.picture} />

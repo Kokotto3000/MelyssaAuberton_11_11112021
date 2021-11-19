@@ -1,0 +1,44 @@
+.carrousel{
+    width: 90%;
+    height: 41.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carrousel_image{
+    border-radius: 2.5rem;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.carrousel_button-previous, .carrousel_button-next{
+    position: absolute;
+    color: white;
+    background: none;
+    border: none;
+    width: 5rem;
+}
+
+.carrousel_button-previous{
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carrousel_button-next{
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carrousel_index{
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
