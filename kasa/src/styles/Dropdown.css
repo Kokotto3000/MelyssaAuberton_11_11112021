@@ -1,3 +1,37 @@
 .dropdown{
     width: 100%;
+    margin-bottom: 2rem;
+}
+
+.dropdown_title{
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown_title::after{
+    content: url(../assets/chevron-up.svg);
+}
+
+.dropdown_title.collapse::after{
+    content: url(../assets/chevron-down.svg);
+}
+
+.dropdown_description{
+    background-color: #f6f6f6;
+    border-radius: 1rem;
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 4rem 2rem;
+}
+
+.dropdown_list{
+    list-style: none;
 }

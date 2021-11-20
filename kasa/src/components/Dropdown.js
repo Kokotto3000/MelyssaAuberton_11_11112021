@@ -3,20 +3,43 @@ import "../styles/Dropdown.css";
 
 class Dropdown extends Component{
 
+    constructor(props){
+        super(props);
+        this.state={
+            isCollapse: true
+        }
+    }
+
+    handleCollapse(){
+        this.setState(({isCollapse})=> (
+            {
+                isCollapse: this.state.isCollapse ? false : true
+            }
+        ))
+    }
+
     render(){
         
         const { title, description }= this.props;
-        console.log(description);
         
         return(
             <div className="dropdown">
-                <h4>{title}</h4>
-                {typeof description === "string" ? (
-                    <p>{description}</p>
+                {this.state.isCollapse ? (
+                    <h3 className="dropdown_title collapse" onClick={this.handleCollapse.bind(this)}>{title}</h3>
                 ) : (
-                    <ul>
+                    <h3 className="dropdown_title" onClick={this.handleCollapse.bind(this)}>{title}</h3>
+                    
+                )}
+                
+                
+                {!this.state.isCollapse && typeof description === "string" && (
+                    <p className="dropdown_description">{description}</p>
+                )}
+
+                {!this.state.isCollapse && typeof description !== "string" && (
+                    <ul className="dropdown_description">
                         {description.map((element, index)=> (
-                            <li key={index}>
+                            <li className="dropdown_list" key={index}>
                                 {element}
                             </li>
                         ))}
