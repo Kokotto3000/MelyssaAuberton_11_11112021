@@ -5,7 +5,7 @@ import Gallery from '../components/Gallery';
 import background from "../assets/banner-background-home.jpg";
 
 
-class Accueil extends Component{
+class Home extends Component{
 
   render(){
         return (
@@ -19,4 +19,4 @@ class Accueil extends Component{
   
 }
 
-export default Accueil;
+export default Home;

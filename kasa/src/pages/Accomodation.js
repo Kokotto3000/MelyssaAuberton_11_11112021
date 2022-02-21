@@ -43,10 +43,10 @@ class Accomodation extends Component{
                 </section>
                 <div className="accomodation-menu">
                     <div className="accomodation-menu_dropdown">
-                        <Dropdown title="Description" description={logement.description} />
+                        <Dropdown title="Description" description={logement.description} type="accomodation" />
                     </div>
                     <div className="accomodation-menu_dropdown">
-                        <Dropdown title="Equipements" description={logement.equipments} />
+                        <Dropdown title="Equipements" description={logement.equipments} type="accomodation" />
                     </div>                    
                 </div>
             </main>

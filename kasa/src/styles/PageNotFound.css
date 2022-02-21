@@ -3,7 +3,6 @@
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
     color: var(--color-primary);
     text-align: center;
 }

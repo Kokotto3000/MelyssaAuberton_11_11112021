@@ -5,7 +5,7 @@ import Dropdown from '../components/Dropdown';
 import about from '../datas/about';
 import background from "../assets/banner-background-about.jpg";
 
-class Propos extends Component{
+class About extends Component{
 
   render(){
         return (
@@ -13,7 +13,7 @@ class Propos extends Component{
                 <Banner image={background} />
                 <div className="about-menu">
                     {about.map((element, index)=> (
-                            <Dropdown key={index} title={element.title} description={element.description} />
+                            <Dropdown key={index} title={element.title} description={element.description} type="about" />
                         )
                     )}
                 </div>
@@ -23,4 +23,4 @@ class Propos extends Component{
   
 }
 
-export default Propos;
+export default About;

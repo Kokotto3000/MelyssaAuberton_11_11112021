@@ -3,7 +3,7 @@
     margin-bottom: 2rem;
 }
 
-.dropdown_title{
+.dropdown_title--accomodation, .dropdown_title--about{
     background-color: var(--color-primary);
     border-radius: 1rem;
     color: white;
@@ -15,21 +15,30 @@
     align-items: center;
 }
 
-.dropdown_title::after{
+.dropdown_title--about{
+    font-size: 2.4rem;
+}
+
+.dropdown_title--accomodation::after, .dropdown_title--about::after{
     content: url(../assets/chevron-up.svg);
 }
 
-.dropdown_title.collapse::after{
+.dropdown_title--accomodation.collapse::after, .dropdown_title--about.collapse::after{
     content: url(../assets/chevron-down.svg);
 }
 
-.dropdown_description{
+.dropdown_description--accomodation, .dropdown_description--about{
     background-color: #f6f6f6;
     border-radius: 1rem;
     color: var(--color-primary);
     font-size: 1.8rem;
     font-weight: 400;
     padding: 4rem 2rem;
+}
+
+.dropdown_description--about{
+    font-size: 2.4rem;
+    padding: 3rem 2rem 1rem 2rem;
 }
 
 .dropdown_list{

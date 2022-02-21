@@ -18,7 +18,9 @@ class Thumb extends Component{
                 
             <li className="thumb" key={this.state.id}>
                 <img className="thumb_image" src={this.state.cover} alt={this.state.title} />
-                <h2 className="thumb_title">{this.state.title}</h2>
+                <div className="thumb_overlay">
+                    <h2 className="thumb_title">{this.state.title}</h2>
+                </div>
             </li>
                 
         );
