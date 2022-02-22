@@ -10,3 +10,16 @@
     height: 3rem;
     margin-left: 1rem;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 1024px){
+    .accomodation-header_rate{
+        justify-content: flex-start;
+    }
+
+    .accomodation-header_rate svg{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 0;
+        margin-right: .5rem;
+    }
+}

@@ -13,13 +13,19 @@ class Banner extends Component{
 
     render(){
         return (
-            <div className="banner">
-                <img className="banner_image" src={this.state.image} alt={this.state.title} />
-                <div className="banner_overlay">
-                    <h1 className="banner_title">{this.state.title}</h1>
+            this.state.title ? (
+                <div className="banner--home">
+                    <img className="banner_image" src={this.state.image} alt={this.state.title} />
+                    <div className="banner_overlay">
+                        <h1 className="banner_title">{this.state.title}</h1>
+                    </div>
                 </div>
-                
-            </div>
+            ) : (
+                <div className="banner">
+                    <img className="banner_image" src={this.state.image} alt={this.state.title} />
+                    <div className="banner_overlay"></div>
+                </div>
+            )
         );
     }
 }

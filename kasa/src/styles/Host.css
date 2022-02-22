@@ -18,3 +18,18 @@
     border-radius: 50%;
     background-color: #c4c4c4;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 1024px){
+    .accomodation-header_host{
+        order: 4;
+    }
+
+    .accomodation-header_host-name{
+        font-size: 1.2rem;
+    }
+
+    .accomodation-header_host-image{
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+}

@@ -43,3 +43,21 @@
     font-size: 1.8rem;
     font-weight: 500;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 1024px){
+    .carrousel{
+        height: 25.5rem;
+    }
+
+    .carrousel_image{
+        border-radius: 1rem;
+    }
+
+    .carrousel_button-previous, .carrousel_button-next{
+        width: 1.2rem;
+    }
+
+    .carrousel_index{
+        display: none;
+    }
+}

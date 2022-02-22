@@ -9,10 +9,17 @@
 }
 
 .footer_link{
-    margin-top: 7rem;
+    margin-top: 6rem;
 }
 
 .footer_p{
     padding: 3rem;
     font-size: 2.4rem;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1024px){
+    .footer_p{
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+    }
 }

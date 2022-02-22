@@ -14,3 +14,18 @@
     font-size: 1.8rem;
     font-weight: 500;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 1024px){
+    .accomodation-header_title{
+        flex-basis: 100%;
+        margin: 0;
+    }
+
+    .accomodation-header_title-main{
+        font-size: 1.8rem;
+    }
+
+    .accomodation-header_title-subtitle{
+        font-size: 1.4rem;
+    }
+}

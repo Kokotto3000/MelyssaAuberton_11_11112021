@@ -1,12 +1,8 @@
-.banner{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+.banner, .banner--home{
     position: relative;
     width: 100%;
-    /*background-color: #c4c4c4;*/
-    /* background: url(../assets/banner-background-home.jpg); */
-    background-size: cover;
+    background-color: #c4c4c4;
+    /* background-size: cover; */
     border-radius: 2.5rem;
     height: 22rem;
     text-align: center;
@@ -39,5 +35,27 @@
     color: white;
     font-size: 4.8rem;
     font-weight: 500;
-    z-index: 10;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1024px){
+    .banner--home{
+        height: 11rem;
+        border-radius: 1rem;
+    }
+
+    .banner_image{
+        border-radius: 1rem;
+    }
+
+    .banner_overlay{
+        border-radius: 1rem;
+        justify-content: flex-start;
+    }
+
+    .banner_title{
+        font-size: 2.4rem;
+        width: 60%;
+        text-align: left;
+        padding: 1.5rem;
+    }
 }
