@@ -40,6 +40,8 @@ Recommended text editor : [Visual Studio Code](https://code.visualstudio.com).
 
 `npm start`
 
+- You can see a preview thanks to [Github Pages](https://kokotto3000.github.io/MelyssaAuberton_11_11112021/).
+
 ### Documents
 
 You can find the application mock-up on [Figma](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=0%3A1).
