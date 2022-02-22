@@ -4,8 +4,6 @@ import Thumb from "./Thumb";
 import logements from '../datas/logements';
 import { Link } from 'react-router-dom';
 
-console.log(logements);
-
 class Gallery extends Component{
 
     render(){

@@ -11,7 +11,7 @@ class Dropdown extends Component{
     }
 
     handleCollapse(){
-        this.setState(({isCollapse})=> (
+        this.setState(()=> (
             {
                 isCollapse: this.state.isCollapse ? false : true
             }
@@ -21,30 +21,30 @@ class Dropdown extends Component{
     render(){
         
         const { title, description, type }= this.props;
+
+        if(!this.state.isCollapse){
+            return (
+                <div className={`dropdown--${type}`} onClick={this.handleCollapse.bind(this)}>            
+                    <h3 className={`dropdown_title--${type}`}>{title}</h3>                    
+                    
+                    {typeof description === "string" ? (
+                        <p className={`dropdown_description--${type}`}>{description}</p>
+                    ) : (
+                        <ul className={`dropdown_description--${type}`}>
+                            {description.map((element, index)=> (
+                                <li className="dropdown_list" key={index}>
+                                    {element}
+                                </li>
+                            ))}
+                        </ul>
+                    )}      
+                </div>
+            )
+        }
         
         return(
-            <div className="dropdown">
-                {this.state.isCollapse ? (
-                    <h3 className={`dropdown_title--${type} collapse`} onClick={this.handleCollapse.bind(this)}>{title}</h3>
-                ) : (
-                    <h3 className={`dropdown_title--${type}`} onClick={this.handleCollapse.bind(this)}>{title}</h3>
-                    
-                )}
-                
-                
-                {!this.state.isCollapse && typeof description === "string" && (
-                    <p className={`dropdown_description--${type}`}>{description}</p>
-                )}
-
-                {!this.state.isCollapse && typeof description !== "string" && (
-                    <ul className={`dropdown_description--${type}`}>
-                        {description.map((element, index)=> (
-                            <li className="dropdown_list" key={index}>
-                                {element}
-                            </li>
-                        ))}
-                    </ul>
-                )}        
+            <div className={`dropdown--${type} collapse`} onClick={this.handleCollapse.bind(this)}>
+                <h3 className={`dropdown_title--${type} collapse`} onClick={this.handleCollapse.bind(this)}>{title}</h3>
             </div>
         );
     }

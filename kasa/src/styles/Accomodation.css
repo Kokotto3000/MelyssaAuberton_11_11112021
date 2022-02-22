@@ -2,12 +2,14 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: stretch;
     width: 90%;
     margin: 2rem auto;
 }
 
 .accomodation-menu_dropdown{
     flex-basis: 48%;
+    margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 1024px){

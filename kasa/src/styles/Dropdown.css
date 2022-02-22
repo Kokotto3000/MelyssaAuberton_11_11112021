@@ -1,7 +1,18 @@
-.dropdown{
+.dropdown--accomodation, .dropdown--about{
     width: 100%;
-    margin-bottom: 2rem;
     cursor: pointer;
+    height: 100%;
+    background-color: #f6f6f6;
+    border-radius: 1rem;
+}
+
+.dropdown--about{
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+}
+
+.dropdown--accomodation.collapse, .dropdown--about.collapse{
+    background-color: transparent;
 }
 
 .dropdown_title--accomodation, .dropdown_title--about{
@@ -10,7 +21,7 @@
     color: white;
     font-size: 1.8rem;
     font-weight: 500;
-    padding: 1.5rem;
+    padding: 1rem 1.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,10 +29,20 @@
 
 .dropdown_title--about{
     font-size: 2.4rem;
+    border-radius: .5rem;
+}
+
+.dropdown_title--about.collapse{
+    margin-bottom: 3rem;
 }
 
 .dropdown_title--accomodation::after, .dropdown_title--about::after{
     content: url(../assets/chevron-up.svg);
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
 }
 
 .dropdown_title--accomodation.collapse::after, .dropdown_title--about.collapse::after{
@@ -29,17 +50,20 @@
 }
 
 .dropdown_description--accomodation, .dropdown_description--about{
-    background-color: #f6f6f6;
-    border-radius: 1rem;
     color: var(--color-primary);
     font-size: 1.8rem;
     font-weight: 400;
     padding: 4rem 2rem;
 }
 
+.dropdown_description--accomodation{
+    line-height: 2.7rem;
+}
+
 .dropdown_description--about{
     font-size: 2.4rem;
     padding: 3rem 2rem 1rem 2rem;
+    line-height: 3.4rem;
 }
 
 .dropdown_list{
@@ -47,18 +71,32 @@
 }
 
 @media only screen and (min-width: 300px) and (max-width: 1024px){
+    .dropdown--about{
+        margin-bottom: 2rem;
+    }
+
     .dropdown_title--accomodation, .dropdown_title--about{
         font-size: 1.3rem;
         border-radius: .5rem;
+        padding: 1rem 1rem 1rem 1.2rem;
+    }
+
+    .dropdown_description--about, .dropdown_description--accomodation{
+        font-size: 1.2rem;        
+        border-radius: .5rem;
+        line-height: 1.7rem;
     }
 
     .dropdown_description--about{
-        font-size: 1.2rem;
         padding: 2rem 1.2rem 5rem 1.2rem;
     }
 
     .dropdown_description--accomodation{
-        font-size: 1.2rem;
-        padding: 1.5rem 1.2rem 0 1.2rem;
+        padding: 1.5rem 1.2rem .5rem 1.2rem;
+    }
+
+    .dropdown_title--accomodation::after, .dropdown_title--about::after{
+        width: 1.8rem;
+        margin: 0;
     }
 }

@@ -9,7 +9,7 @@ class About extends Component{
 
   render(){
         return (
-            <main>
+            <main className='about'>
                 <Banner image={background} />
                 <div className="about-menu">
                     {about.map((element, index)=> (

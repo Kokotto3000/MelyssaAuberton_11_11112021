@@ -23,8 +23,7 @@ class App extends Component{
                         <Route exact path="/about" component={About} />
                         <Route path="/accomodation/:id" component={Accomodation}/>
                         <Route path="*" component={PageNotFound} />            
-                        
-                        {/* si l'id n'existe pas il nous faudra aussi une route not found... */}
+
 
                     </Switch>
 
@@ -33,7 +32,6 @@ class App extends Component{
             </Router>
         );
     }
-  
 }
 
 export default App;

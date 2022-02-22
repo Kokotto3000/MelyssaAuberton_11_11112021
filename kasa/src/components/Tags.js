@@ -4,9 +4,11 @@ import "../styles/Tags.css";
 class Tags extends Component{
 
     render(){
+        const {tags}= this.props;
+        
         return(            
             <ul className="accomodation-header_tags">
-                {this.props.tags.map((tag, index) =>
+                {tags.map((tag, index) =>
                     (
                         <li className="accomodation-header_tags-item" key={index}>
                             {tag}

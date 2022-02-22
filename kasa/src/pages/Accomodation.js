@@ -19,21 +19,17 @@ class Accomodation extends Component{
     }
 
     filterById(id){
-        const filteredLogement = logements.filter(logement => logement.id === id);
+        const filteredLogement = logements.filter(logement => logement.id === id);        
         return filteredLogement.length === 0 ? null : filteredLogement[0];
     }    
 
     render(){
-        console.log(this.state.id);
-        console.log(this.filterById(this.state.id));
-
         const logement= this.filterById(this.state.id);
 
         if(!logement) return <PageNotFound />
 
         return(
             <main>
-                {/* <h1>Accomodation {this.state.id} </h1> */}
                 <Carrousel pictures={logement.pictures} alt={logement.title} />
                 <section className="accomodation-header"> 
                     <Title title={logement.title} location={logement.location} />

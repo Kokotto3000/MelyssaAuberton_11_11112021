@@ -7,7 +7,9 @@ class Header extends Component{
 
     constructor(props){
         super(props);
-        this.state= {title: props.title || "Kasa"};        
+        this.state= {
+            title: props.title || "Kasa"
+        };        
     }
 
     render(){
@@ -17,7 +19,6 @@ class Header extends Component{
                     <img className="header_logo" src={ logo } alt="logo Kasa" />
                 </Link>
                 
-                {/* <h1>{this.state.title}</h1> */}
                 <nav className="header_nav">
                     <Link className="header_nav-link" to="/">Accueil</Link>
                     <Link className="header_nav-link" to="/about">A Propos</Link>
