@@ -32,3 +32,21 @@
     font-size: 500;
     margin: 18rem 0;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 1024px){
+    .not-found{
+        justify-content: center;
+    }
+
+    .not-found_title{
+        font-size: 9.6rem;
+    }
+    
+    .not-found_subtitle{
+        font-size: 1.8rem;
+    }
+    
+    .not-found_link{
+        font-size: 1.4rem;
+    }
+}

@@ -4,7 +4,7 @@
 
 .about-menu{
     width: 70%;
-    margin: 0 auto;
+    margin: 4rem auto;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 1024px){
