@@ -1,5 +1,6 @@
 import { Component } from "react";
 import "../styles/Rate.css";
+import { PropTypes } from "prop-types";
 
 class Rate extends Component{
 
@@ -18,5 +19,9 @@ class Rate extends Component{
         );
     }
 }
+
+Rate.propTypes = {
+    rating: PropTypes.number.isRequired
+};
 
 export default Rate;

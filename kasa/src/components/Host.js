@@ -1,5 +1,6 @@
 import { Component } from "react";
 import "../styles/Host.css";
+import { PropTypes } from "prop-types";
 
 class Host extends Component{
 
@@ -18,5 +19,10 @@ class Host extends Component{
         );
     }
 }
+
+Host.propTypes = {
+    name: PropTypes.string.isRequired,
+    picture: PropTypes.string.isRequired
+};
 
 export default Host;

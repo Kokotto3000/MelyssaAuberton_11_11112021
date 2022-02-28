@@ -1,5 +1,6 @@
 import { Component } from "react";
 import "../styles/Tags.css";
+import { PropTypes } from "prop-types";
 
 class Tags extends Component{
 
@@ -18,6 +19,10 @@ class Tags extends Component{
             </ul>
         );
     }
+}
+
+Tags.propTypes= {
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
 export default Tags;

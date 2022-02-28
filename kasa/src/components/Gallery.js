@@ -8,19 +8,17 @@ class Gallery extends Component{
 
     render(){
         return(
-            <ul className="gallery">
-                {logements.map(({id, title, cover}) => 
-                    (
-                        <Link to={`/accomodation/${id}`} key={id}>
-                            <Thumb
-                                id={id}
-                                title={title}
-                                cover={cover}
-                            />
-                        </Link>
-                    )
-                )}
-            </ul>
+            <div className="gallery">
+                {logements.map(({id, title, cover}) => (
+                    <Link to={`/accomodation/${id}`} key={id}>
+                        <Thumb
+                            id={id}
+                            title={title}
+                            cover={cover}
+                        />
+                    </Link>     
+                ))}
+            </div>
         );
     }
 }

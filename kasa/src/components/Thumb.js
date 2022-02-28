@@ -1,5 +1,6 @@
 import { Component } from "react";
 import '../styles/Thumb.css';
+import { PropTypes } from "prop-types";
 
 class Thumb extends Component{
 
@@ -17,6 +18,12 @@ class Thumb extends Component{
                 
         );
     }
+}
+
+Thumb.propTypes= {
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired
 }
 
 export default Thumb;

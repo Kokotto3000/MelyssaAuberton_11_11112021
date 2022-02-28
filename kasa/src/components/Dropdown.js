@@ -1,5 +1,6 @@
 import { Component } from "react";
 import "../styles/Dropdown.css";
+import { PropTypes } from "prop-types";
 
 class Dropdown extends Component{
 
@@ -49,5 +50,14 @@ class Dropdown extends Component{
         );
     }
 }
+
+Dropdown.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.array
+    ]).isRequired,
+    type: PropTypes.string.isRequired
+};
 
 export default Dropdown;

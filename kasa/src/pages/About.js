@@ -7,7 +7,7 @@ import background from "../assets/banner-background-about.jpg";
 
 class About extends Component{
 
-  render(){
+    render(){
         return (
             <main className='about'>
                 <Banner image={background} />
@@ -19,8 +19,7 @@ class About extends Component{
                 </div>
             </main>
         );
-  }
-  
+    }  
 }
 
 export default About;
