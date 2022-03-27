@@ -39,9 +39,6 @@
 .dropdown_title--accomodation::after, .dropdown_title--about::after{
     content: url(../assets/chevron-up.svg);
     width: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 1.5rem;
 }
 
