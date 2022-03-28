@@ -30,7 +30,7 @@ Recommended text editor : [Visual Studio Code](https://code.visualstudio.com).
 
 - Go to the project folder :
 
-`cd MelyssaAuberton_11_11112021`
+`cd MelyssaAuberton_11_11112021/kasa`
 
 - Install the packages
 
