@@ -18,8 +18,6 @@ class Accomodation extends Component{
         }
     }
 
-    
-
     filterById(id){
         return logements.find(logement => logement.id === id);
     }    
