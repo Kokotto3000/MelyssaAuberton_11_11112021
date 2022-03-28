@@ -18,9 +18,10 @@ class Accomodation extends Component{
         }
     }
 
+    
+
     filterById(id){
-        const filteredLogement = logements.filter(logement => logement.id === id);        
-        return filteredLogement.length === 0 ? null : filteredLogement[0];
+        return logements.find(logement => logement.id === id);
     }    
 
     render(){
