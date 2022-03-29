@@ -10,13 +10,13 @@ class About extends Component{
         super(props);
         this.state= {
             about: null
-        }
+        };
     }
 
     componentDidMount(){
-        fetch('./datas/about.json')
+        fetch('../datas/about.json')
         .then(response=> response.json())
-        .then(aboutResponse=> this.setState({about: aboutResponse}))
+        .then(about=> this.setState({about: about}));
     }
 
     render(){
@@ -36,7 +36,7 @@ class About extends Component{
             );
         }
         return (
-            <div>Loading</div>
+            <div>Loading datas...</div>
         )
         
     }  

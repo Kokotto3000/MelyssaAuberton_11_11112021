@@ -6,7 +6,7 @@ import Tags from "../components/Tags";
 import Rate from "../components/Rate";
 import "../styles/Accomodation.css";
 import Dropdown from "../components/Dropdown";
-import logements from '../datas/logements';
+//import logements from '../datas/logements';
 import PageNotFound from "./PageNotFound";
 
 class Accomodation extends Component{
@@ -14,18 +14,41 @@ class Accomodation extends Component{
     constructor(props){
         super(props);
         this.state= {
-            id: this.props.match.params.id
+            id: this.props.match.params.id,
+            logements: null,
+            logement: null,
+            loading: true,
+            error: false
         }
     }
 
+    componentDidMount(){
+        const id= this.props.match.params.id;
+        console.log(id)
+        fetch('../datas/logements.json')
+        .then(response=> response.json())
+        .then(logements=> {
+            this.setState({logements: logements});
+            this.setState({logement: this.filterById(id)});
+        })
+        .catch(err=> {
+            console.log("error : " + err);
+            this.setState({ error: true });
+        })
+        .finally(()=> this.setState({loading: false}))
+    }
+
     filterById(id){
+        const {logements}= this.state;
         return logements.find(logement => logement.id === id);
-    }    
+    }
 
     render(){
-        const logement= this.filterById(this.state.id);
+        const { logement, loading, error }= this.state;
 
-        if(!logement) return <PageNotFound />
+        if(loading) return <div>Loading datas...</div>
+
+        if(error) return <PageNotFound />
 
         return(
             <main>
